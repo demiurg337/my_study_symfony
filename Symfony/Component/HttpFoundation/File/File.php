@@ -61,7 +61,7 @@ class File extends \SplFileInfo
         /*
         Новый адрес файла
         */
-        $target = rtrim($dir, '/\\').DIRECTORY_SEPARATOR.(null === $name ? $this->getBasename : $this->getName($name));
+        $target = rtrim($dir, '/\\').DIRECTORY_SEPARATOR.(null === $name ? $this->getBasename() : $this->getName($name));
 
 
         /*
